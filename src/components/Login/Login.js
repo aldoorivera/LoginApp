@@ -15,7 +15,7 @@ function Login() {
     }
     return(
         <Form
-            rutaDeImagen="../Img/Letra A.png"
+            rutaDeImagen="https://raw.githubusercontent.com/aldoorivera/LoginApp/master/src/Img/Letra%20A.png"
         >
             <FormField 
             caption="Usuario"
