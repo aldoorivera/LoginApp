@@ -1,6 +1,7 @@
 function FormAction({caption, onClick}) {
+    const botonstyle = ["my-2","rounded-lg" ,"p-2", " w-full","bg-red-900","text-white"];
     return(
-        <button
+        <button className={botonstyle.join(" ")}
         onClick={onClick}
         >
             {caption}

@@ -1,10 +1,8 @@
 function FormField({caption, type, id, name, onChange ,value}) {
+    const imputstyle = ["my-2","rounded-lg" ,"p-2", " w-full", "border-b-2","border-red-900"];
     return (
         <section>
-            <label>
-                {caption}
-            </label>
-            <input type={type} id={id} name={name} onChange={onChange} value={value}/>
+            <input className={imputstyle.join(" ")} type={type} id={id} placeholder={caption} name={name} onChange={onChange} value={value}/>
         </section>
     )
 }

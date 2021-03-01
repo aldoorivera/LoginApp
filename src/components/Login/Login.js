@@ -14,7 +14,9 @@ function Login() {
         console.log(formData);
     }
     return(
-        <Form>
+        <Form
+            rutaDeImagen="../Img/Letra A.png"
+        >
             <FormField 
             caption="Usuario"
             type="text"
@@ -26,7 +28,7 @@ function Login() {
             </FormField>
             <FormField 
             caption="Contraseña"
-            type="text"
+            type="password"
             id="password"
             name="password"
             value={formData.password}
