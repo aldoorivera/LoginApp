@@ -1,0 +1,12 @@
+.striked
+{
+    text-decoration:line-through;
+    color: rgba(116, 113, 113, 0.5);
+}
+
+.Fondo
+{
+    background-color: #141212;
+    min-height: 100vh;
+
+}

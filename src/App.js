@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Todo from "./components/pages/Todo.js";
+import Todo from "./components/todo/Todo.js";
 function App() {
 
   const style =["App", "flex","justify-center","items-center","p-5"]
@@ -17,7 +17,7 @@ function App() {
             <Todo/>
           </Route>
           <Route exact path="/LoginApp">    
-            <div style={{backgroundColor:'pink'}} className={style.join(" ")}>
+            <div className={style.join(" ")}>
               <Login/>
             </div>
           </Route>

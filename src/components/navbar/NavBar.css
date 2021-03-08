@@ -4,4 +4,6 @@ nav{
     padding: 1vw;
     align-items: center;
     justify-content: space-between;
+    background: #141212;
+    color: #FFF;
 }
