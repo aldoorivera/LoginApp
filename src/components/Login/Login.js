@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import FormField from "../Form/FormField";
 import Form from "../Form/Form";
 import FormAction from "../Form/FormAction";
+import {useHistory} from "react-router-dom";
 function Login() {
     const [formData , setFormData] = useState({
         username:"",
@@ -13,6 +14,12 @@ function Login() {
         setFormData({...formData, [name]:value, [name+"Error"]:console.error});
         console.log(formData);
     }
+    const history = useHistory();
+    const CambioDePagina = (username) => 
+    {   
+        history.push('/LoginApp/Todo'); 
+        alert(`!Bievenido ${username}!`)
+    };
     return(
         <Form
             rutaDeImagen="https://raw.githubusercontent.com/aldoorivera/LoginApp/master/src/Img/Letra%20A.png"
@@ -44,7 +51,7 @@ function Login() {
                     const { username, password } = formData;
                     
                     if (password){
-                        (/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$/).test(password) ? alert(`!Bievenido ${username}!`) :alert("Contraseña Inválida");
+                        (/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$/).test(password) ?CambioDePagina(username) :alert("Contraseña Inválida");
                     }
                     
                 }
