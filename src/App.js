@@ -1,7 +1,7 @@
 import './App.css';
 import  Login from "./components/Login/Login";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
   const style =["App", "flex","justify-center","items-center","p-5"]
 
   return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router >
         <Switch>
           <Route exact path="/Todo">
             <Todo/>
